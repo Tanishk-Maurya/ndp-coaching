@@ -1,0 +1,116 @@
+
+.page-title {
+  text-align: center;
+}
+.page-title p {
+  /* font-size: 1rem; */
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+
+/* About Us Section */
+.section {
+  padding: 60px 0;
+}
+
+.about-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+}
+
+.container p{
+    line-height: 2;
+}
+
+.container ol{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 40%;
+}
+
+/* Image */
+.about-image {
+  flex: 1 1 45%;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+/* Content */
+.about-us .content {
+  flex: 1 1 50%;
+}
+
+.about-us .content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.about-us .content p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+
+}
+
+.about-us .content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-us .content ul li {
+  padding-bottom: 10px;
+  font-size: 1rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.about-us .content ul i {
+  font-size: 1.25rem;
+  margin-right: 8px;
+  color: var(--accent-color); /* Accent color */
+}
+
+.about-us .content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image,
+  .about-us .content {
+    flex: 1 1 100%;
+    padding: 0 20px;
+    text-align: left;
+  }
+
+  .about-us .content ul {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  .container p{
+    max-width: 90%;
+    line-height: 1.5;
+    margin-top: 20px;
+  }
+
+  .container ol{
+    padding-left: 15px;
+  }
+}
